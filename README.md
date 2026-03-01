@@ -16,6 +16,8 @@ translation that minimises the sum of distances between nearest-neighbour
 pairs.  A convergence plot shows how the mean distance error decreases over
 iterations.
 
+![ICP result](icp/icp_result.png)
+
 ### Random Sample Consensus (RANSAC)
 **`ransac/ransac.py`**
 
@@ -23,6 +25,8 @@ Robust 2-D line fitting in the presence of outliers.  RANSAC repeatedly
 samples random minimal subsets, counts inliers within a distance threshold,
 and keeps the best model.  The final model is re-fitted using all detected
 inliers.
+
+![RANSAC result](ransac/ransac_result.png)
 
 ### Least Squares Fitting (1-D, 2-D, 3-D)
 **`least_squares/least_squares.py`**
@@ -34,6 +38,8 @@ Demonstrates ordinary least-squares regression at three levels of complexity:
 | 1-D | Polynomial curve fitting (degrees 1, 3, 5) | x–y scatter with fitted curves |
 | 2-D | Plane fitting `z = ax + by + c` | 2-D contour overlay on scatter |
 | 3-D | Hyperplane fitting `w = ax + by + cz + d` | 3-D scatter coloured by residual |
+
+![Least Squares result](least_squares/least_squares_result.png)
 
 ### Path Planning – A\* and Dijkstra
 **`path_planning/astar.py`** · **`path_planning/dijkstra.py`**
@@ -50,6 +56,9 @@ makes it easy to compare the number of cells explored:
 A\* reaches the goal faster by using the Euclidean distance heuristic to focus
 the search towards the goal.
 
+![Dijkstra result](path_planning/dijkstra_result.png)
+![A* result](path_planning/astar_result.png)
+
 ### Kalman Filter (1-D)
 **`kalman_filter/kalman_filter.py`**
 
@@ -57,6 +66,8 @@ Tracks a 1-D object with sinusoidally varying velocity using a linear Kalman
 filter (state: position + velocity; measurement: position only).  Three panels
 show the estimated vs. true position (with ±2σ confidence band), estimated vs.
 true velocity, and the estimation error over time.
+
+![Kalman Filter result](kalman_filter/kalman_filter_result.png)
 
 ---
 
